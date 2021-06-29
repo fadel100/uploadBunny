@@ -1,6 +1,12 @@
 const fetch = require("node-fetch");
 const { createReadStream } = require("fs");
 
+fs.readdir(__dirname, (err, files) => {
+  files.forEach((file) => {
+    console.log(file);
+  });
+});
+
 const stream = createReadStream(
   `%27How%20To%20Ensure%20Any%20Type%20Of%20Ad%20Works%20and%20Spy%20On%20Your%20Competition.mp4%27`
 );
