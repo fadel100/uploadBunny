@@ -2,7 +2,7 @@ const fetch = require("node-fetch");
 const { createReadStream } = require("fs");
 
 const stream = createReadStream(
-  `../'How To Ensure Any Type Of Ad Works and Spy On Your Competition.mp4'`
+  `'How To Ensure Any Type Of Ad Works and Spy On Your Competition.mp4'`
 );
 
 const url =
