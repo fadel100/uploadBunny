@@ -1,13 +1,19 @@
 const fetch = require("node-fetch");
+const { createReadStream } = require("fs");
+
+const stream = createReadStream(
+  `'How To Ensure Any Type Of Ad Works and Spy On Your Competition.mp4'`
+);
 
 const url =
-  "http://video.bunnycdn.com/library/1459/videos/4f236e44-eab3-4a66-a9c5-3d8a65330ed8";
+  "http://video.bunnycdn.com/library/1459/videos/c60708e4-4da2-4356-bddb-e7bb8f9478f2";
+
 const options = {
   method: "PUT",
   headers: {
     "Content-Type": "application/*+json",
     AccessKey: "98808fd1-dd48-469c-b69b42f4109e-1c7d-4baf",
-    body: '"data:video/mp4;name=%27How%20To%20Ensure%20Any%20Type%20Of%20Ad%20Works%20and%20Spy%20On%20Your%20Competition.mp4%27"',
+    body: stream,
   },
 };
 
