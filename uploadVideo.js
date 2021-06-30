@@ -1,5 +1,5 @@
 const fetch = require("node-fetch");
-const { createReadStream } = require("fs");
+const fs = require("fs");
 
 fs.readdir(__dirname, (err, files) => {
   files.forEach((file) => {
@@ -7,7 +7,7 @@ fs.readdir(__dirname, (err, files) => {
   });
 });
 
-const stream = createReadStream(
+const stream = fs.createReadStream(
   `%27How%20To%20Ensure%20Any%20Type%20Of%20Ad%20Works%20and%20Spy%20On%20Your%20Competition.mp4%27`
 );
 
