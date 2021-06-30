@@ -8,7 +8,7 @@ fs.readdir(__dirname, (err, files) => {
 });
 
 const stream = fs.createReadStream(
-  `%27How%20To%20Ensure%20Any%20Type%20Of%20Ad%20Works%20and%20Spy%20On%20Your%20Competition.mp4%27`
+  `How To Ensure Any Type Of Ad Works and Spy On Your Competition.mp4`
 );
 
 const url =
