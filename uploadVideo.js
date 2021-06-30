@@ -12,11 +12,12 @@ const stream = fs.createReadStream(
 );
 
 const url =
-  "http://video.bunnycdn.com/library/1459/videos/aa3487ad-e904-4644-b9a0-e88c3adbdd28";
+  "http://video.bunnycdn.com/library/1459/videos/51bdc68a-0300-4709-99c1-2b7bfcc257b3";
 
 const options = {
   method: "PUT",
   headers: {
+    "Content-Type": "video/x-m4v",
     AccessKey: "98808fd1-dd48-469c-b69b42f4109e-1c7d-4baf",
     body: stream,
   },
