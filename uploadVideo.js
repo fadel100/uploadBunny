@@ -15,12 +15,13 @@ const stream = fs.createReadStream(
 );
 
 const url =
-  "http://video.bunnycdn.com/library/1459/videos/5e643930-96fe-43b1-a54d-cb0f16582c4a";
+  "http://video.bunnycdn.com/library/1459/videos/9573db68-1f06-48c2-b3f4-668fd50ba604";
 
 const options = {
   method: "PUT",
   headers: {
-    "Content-Type": "video/x-m4v",
+    // "Content-Type": "video/x-m4v",
+
     AccessKey: "98808fd1-dd48-469c-b69b42f4109e-1c7d-4baf",
   },
   body: stream,
