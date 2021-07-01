@@ -9,13 +9,15 @@ const fs = require("fs");
 
 // const stats = fs.statSync(`How To Ensure Any Type Of Ad Works and Spy On Your Competition.mp4`);
 // const fileSizeInBytes = stats.size;
-
-const stream = fs.createReadStream(
+const buffer = fs.readFileSync(
   `How To Ensure Any Type Of Ad Works and Spy On Your Competition.mp4`
 );
+// const stream = fs.createReadStream(
+//   `How To Ensure Any Type Of Ad Works and Spy On Your Competition.mp4`
+// );
 
 const url =
-  "http://video.bunnycdn.com/library/1459/videos/9573db68-1f06-48c2-b3f4-668fd50ba604";
+  "http://video.bunnycdn.com/library/1459/videos/b8e3b5b0-0d23-46dc-a509-f57c06e524e1";
 
 const options = {
   method: "PUT",
@@ -24,7 +26,7 @@ const options = {
 
     AccessKey: "98808fd1-dd48-469c-b69b42f4109e-1c7d-4baf",
   },
-  body: stream,
+  body: buffer,
 };
 
 fetch(url, options)
